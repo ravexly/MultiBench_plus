@@ -1,6 +1,8 @@
-# MultiBench++
-offical code of MULTIBENCH++: A Unified and Comprehensive Multimodal Fusion Benchmarking Across Specialized Domains 
+Here is the modified version of the documentation, adapted for the **MAMI** dataset.
 
+```markdown
+# MultiBench++
+Official code of MULTIBENCH++: A Unified and Comprehensive Multimodal Fusion Benchmarking Across Specialized Domains 
 
 ## Requirements
 
@@ -10,44 +12,52 @@ Follow [DATASET.md](DATASET.md) to install datasets.
 ## Get Started
 ### Example usage
 
-#### 1\. Data Preparation
+#### 1. Data Preparation
 
 All datasets should be organized under the `data/` directory.
 
-**Setting up the IEMOCAP Dataset:**
+**Setting up the MAMI Dataset:**
 
-1.  Download `IEMOCAP_features_raw.pkl` from the [soujanyaporia/multimodal-sentiment-analysis](https://github.com/soujanyaporia/multimodal-sentiment-analysis) repository.
-2.  Place the downloaded file into the `data/IEMOCAP/` directory.
+1.  Follow the instructions in [DATASET.md](DATASET.md) to download the MAMI dataset.
+2.  Place the downloaded data into the `data/MAMI/` directory.
 
 The expected directory structure is as follows:
 
 ```text
 ProjectRoot/
 ├── data/
-│   └── IEMOCAP/
-│       └── IEMOCAP_features_raw.pkl
+│   └── MAMI/
+│       └── (dataset files...)
 ├── exper/
-│   └── iemocap/
-│       └── exper.py
+│   └── MAMI/
+│       └── baseline.py
 └── ...
+
 ```
 
-#### 2\. Running Experiments
+#### 2. Running Experiments
 
 To reproduce the reported results, navigate to the dataset-specific directory within `exper/` and execute the python script.
 
-**Run IEMOCAP Experiment:**
+**Run MAMI Experiment:**
 
 ```bash
 # Navigate to the experiment directory
-cd exper/iemocap/
+cd exper/MAMI/
 
 # Run the experiment script
-python exper.py
+python baseline.py
+
 ```
+
 ### Encoders
-For the Bert model, download bert-base-uncased ([Google Drive Link](https://drive.google.com/file/d/1ivh-3aHtoqRMwVN4ZOPvPm59pFP93-hD/view)) and place it in the root folder bert-base-uncased/.
+
+For the Bert model, download bert-base-uncased ([Google Drive Link](https://drive.google.com/file/d/1ivh-3aHtoqRMwVN4ZOPvPm59pFP93-hD/view)) and place it in the root folder `bert-base-uncased/`.
 
 ### Acknowledgements
 
 Our implementation is built upon [MULTIBENCH](https://github.com/pliang279/MultiBench). We thank the authors for their excellent open-source work.
+
+```
+
+```
