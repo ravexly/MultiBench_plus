@@ -1,6 +1,3 @@
-Here is the modified version of the documentation, adapted for the **MAMI** dataset.
-
-```markdown
 # MultiBench++
 Official code of MULTIBENCH++: A Unified and Comprehensive Multimodal Fusion Benchmarking Across Specialized Domains 
 
@@ -58,6 +55,3 @@ For the Bert model, download bert-base-uncased ([Google Drive Link](https://driv
 
 Our implementation is built upon [MULTIBENCH](https://github.com/pliang279/MultiBench). We thank the authors for their excellent open-source work.
 
-```
-
-```
